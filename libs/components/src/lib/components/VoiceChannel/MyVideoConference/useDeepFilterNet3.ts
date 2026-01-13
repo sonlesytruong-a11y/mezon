@@ -25,7 +25,7 @@ export const useDeepFilterNet3 = (options?: UseDeepFilterNet3Options) => {
 	const { localParticipant } = useLocalParticipant();
 	const processorsRef = useRef<Map<string, ProcessorData>>(new Map());
 	const levelRef = useRef<number>(normalizedLevel);
-
+    const a = 1;
 	useEffect(() => {
 		levelRef.current = normalizedLevel;
 	}, [level]);
